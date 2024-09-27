@@ -1,17 +1,19 @@
 extends Node3D
 
 @export var brick_scene:PackedScene
-@export var rows = 10
-@export var cols = 10
+@export var height = 10
+@export var width = 10
+@export var length = 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for row in range(rows):
-		for col in range(cols):
-			var brick = brick_scene.instantiate()
-			var pos = Vector3(col, row, 0)
-			brick.position = pos
-			add_child(brick)
+	for height in range(height):
+		for witdth in range(width):
+			for length in range(length):
+				var brick = brick_scene.instantiate()
+				var pos = Vector3(width, height, length)
+				brick.position = pos
+				add_child(brick)
 
 	pass # Replace with function body.
 

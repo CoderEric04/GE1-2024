@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2cnv7v7huh3k"]
+[gd_scene load_steps=10 format=3 uid="uid://d2cnv7v7huh3k"]
 
 [ext_resource type="Material" uid="uid://fmswdiej3onk" path="res://green.tres" id="1_ljfv3"]
 [ext_resource type="Material" uid="uid://12bqh76svrfe" path="res://blue.tres" id="2_cp1av"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="3_1hidi"]
 [ext_resource type="Script" path="res://scenes/wall.gd" id="4_x4eqr"]
 [ext_resource type="PackedScene" uid="uid://buu3aq61omx1k" path="res://brick.tscn" id="5_nw2f7"]
+[ext_resource type="Script" path="res://scenes/tower.gd" id="6_nxbgm"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_00q4b"]
 size = Vector2(100, 100)
@@ -44,3 +45,6 @@ transform = Transform3D(0.597812, 0.487615, 0.63628, -0.63207, 0.774911, 0, -0.4
 transform = Transform3D(0.470596, 0, 0.882349, 0, 1, 0, -0.882349, 0, 0.470596, 0, 0, -5.7109)
 script = ExtResource("4_x4eqr")
 brick_scene = ExtResource("5_nw2f7")
+
+[node name="tower" type="Node3D" parent="."]
+script = ExtResource("6_nxbgm")
